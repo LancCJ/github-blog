@@ -152,6 +152,7 @@ module.exports = {
             { text: '文章', link: '/posts/', exact: false },
             { text: '项目', link: '/project', exact: false },
             { text: '个人简介', link: '/about', exact: false },
+            { text: 'Custom Pages', link: '/custom-pages/', exact: false },
         ],
 
         // 评论配置，参考下方 [页面评论] 章节
