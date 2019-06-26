@@ -1,25 +1,12 @@
 language: node_js
+sudo: required
 node_js:
   - "lts/*"
-branches:
-  only:
-  - master
+branch: master
 cache:
   directories:
-  - node_modules
-  yarn: true
+    - node_modules
 before_install:
-- export TZ='Asia/Shanghai'  # 设置时区
-install:
-- yarn
+  - export TZ='Asia/Shanghai'  # 设置时区
 script:
-- yarn build
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  local-dir: ./sources/.vuepress/dist/ ## 根据情况自定义到静态文件输出目录
-  target-branch: master
-  verbose: true
-  on:
-    branch: master
+  - ./deploy.sh    
