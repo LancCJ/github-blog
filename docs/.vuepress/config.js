@@ -21,10 +21,11 @@ module.exports = {
             { text: 'GitHub地址', link: 'https://github.com/LancCJ' }
           ]
         }        
-      ],
-      sidebar: [
-        ['/', '首页'],
-        ['/blog/FirstBlog.md', '我的第一篇博客']
       ]
+      // ,
+      // sidebar: [
+      //   ['/', '首页'],
+      //   ['/blog/FirstBlog.md', '我的第一篇博客']
+      // ]
     }
   };
