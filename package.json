@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev src",
-    "build": "vuepress build src --dest dist"  },
+    "build": "vuepress build src --dest dist"
+  },
   "keywords": [
     "github-blog"
   ],
   "author": "lanccj",
   "license": "ISC",
   "dependencies": {
-    "vuepress": "^1.0.2",
     "vuepress-theme-meteorlxy": "^1.0.1"
   }
 }
