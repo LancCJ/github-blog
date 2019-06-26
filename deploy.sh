@@ -26,6 +26,6 @@ git config --local user.email "lanccj@163.com"
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
 
 # 注意这里是加入Travis配置的推送
-git push -f https://$access_token}@github.com/lanccj/lanccj.github.io.git master
+git push -f https://${access_token}@github.com/lanccj/lanccj.github.io.git master
 
 cd -
