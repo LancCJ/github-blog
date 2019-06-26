@@ -36,22 +36,22 @@ module.exports = {
     github: 'https://github.com/lanccj', //点击github跳转的地址
     vssue: {
       //评论的配置,
-      need: false, //是否需要评论
+      need: true, //是否需要评论
       option: {
         //公共的Vssue配置
-        owner: '', //用户名
-        repo: '', //仓库名
+        owner: 'lanccj', //用户名
+        repo: 'github-blog', //仓库名
         locale: 'zh'
       },
       development: {
         //开发环境下的配置
-        clientId: '',
-        clientSecret: ''
+        clientId: '8a03914e6fe8cd2c0f7c',
+        clientSecret: '3d7ab25fed48afc4108f94e54332a575692d2d82'
       },
       production: {
         //生产环境的配置
-        clientId: '',
-        clientSecret: ''
+        clientId: '8a03914e6fe8cd2c0f7c',
+        clientSecret: '3d7ab25fed48afc4108f94e54332a575692d2d82'
       }
     },
     menus: {
