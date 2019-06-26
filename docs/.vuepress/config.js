@@ -1,31 +1,66 @@
 module.exports = {
-    title: 'LancCJ Github Blog',
-    description: 'LancCJ Github 博客',
-    // 注入到当前页面的 HTML <head> 中的标签
-    head: [
-      ['link', { rel: 'icon', href: '/favicon.ico' }], // 增加一个自定义的 favicon(网页标签的图标)
-    ],
-    base: '/', // 这是部署到github相关的配置 下面会讲
-    markdown: {
-      lineNumbers: true // 代码块显示行号
-    },
-    themeConfig: {
-      sidebarDepth: 2, // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
-      lastUpdated: 'Last Updated', // 文档更新时间：每个文件git最后提交的时间
-      nav:[
-        { text: '博客', link: 'https://blog.lanccj.cn/' }, // 外部链接
-        // 下拉列表
-        {
-          text: 'GitHub',
-          items: [
-            { text: 'GitHub地址', link: 'https://github.com/LancCJ' }
-          ]
-        }        
-      ]
-      // ,
-      // sidebar: [
-      //   ['/', '首页'],
-      //   ['/blog/FirstBlog.md', '我的第一篇博客']
-      // ]
+  base: '/', //部署站点的基础路径，如果你想让你的网站部署到一个子路径下，你将需要设置它。如 Github pages，如果你想将你的网站部署到 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/"，它的值应当总是以斜杠开始，并以斜杠结束。
+  dest: './dist',
+  title: 'LancCJ博客',
+  description:
+    '技术共享,共同进步!', //网站的描述，它将会以 <meta> 标签渲染到当前页面的 HTML 中,还显示在首页的文章列表上面
+  head: [
+    [
+      'link',
+      {
+        rel: 'shortcut icon',
+        href: '/favicon.ico'
+      }
+    ]
+  ],
+  theme: 'indigo-material',
+  locales: {
+    '/': {
+      lang: 'zh-CN',
+      title: 'LancCJ',
+      description:
+        '三人行，必有我师焉，择其善者而从之，其不善者而改之。'
     }
-  };
+  },
+  markdown: {
+    lineNumbers: true //是否开启文章代码左边的行号显示
+  },
+  themeConfig: {
+    placeholder: '搜搜看', //搜索框的默认文章
+    searchReply: '什么都没搜到，试一下其它搜索词~',
+    author: 'LancCJ', //侧边栏的设置
+    email: 'LancCJ@163.com',
+    pagination: '5', //每一页显示的文章个数
+    avatar: '/avatar.jpg', //头像地址
+    brand: '/brand.jpg', //头像背景图片地址
+    github: 'https://github.com/lanccj', //点击github跳转的地址
+    vssue: {
+      //评论的配置,
+      need: false, //是否需要评论
+      option: {
+        //公共的Vssue配置
+        owner: '', //用户名
+        repo: '', //仓库名
+        locale: 'zh'
+      },
+      development: {
+        //开发环境下的配置
+        clientId: '',
+        clientSecret: ''
+      },
+      production: {
+        //生产环境的配置
+        clientId: '',
+        clientSecret: ''
+      }
+    },
+    menus: {
+      //侧边栏的文字
+      tags: '标签分类',
+      home: '主页',
+      all: '时间归档',
+      github: 'Github',
+      about: '自我介绍'
+    }
+  }
+};

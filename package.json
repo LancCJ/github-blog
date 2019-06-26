@@ -1,24 +1,17 @@
 {
-  "name": "github-blog",
+  "name": "template",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "template",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
-    "d": "bash deploy.sh"
+    "build": "vuepress build docs"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LancCJ/github-blog.git"
-  },
-  "author": "lanccj",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LancCJ/github-blog/issues"
-  },
-  "homepage": "https://github.com/LancCJ/github-blog#readme",
-  "devDependencies": {
-    "vuepress": "^1.0.2"
+  "keywords": [
+    "vuepress",
+    "theme",
+    "material design"
+  ],
+  "dependencies": {
+    "vuepress-theme-indigo-material": "^1.0.20"
   }
 }
