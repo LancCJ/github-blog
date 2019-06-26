@@ -1,17 +1,18 @@
 {
-  "name": "template",
+  "name": "github-blog",
   "version": "1.0.0",
-  "description": "template",
+  "description": "github-blog",
+  "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
-  },
+    "dev": "vuepress dev src",
+    "build": "vuepress build src --dest dist"  },
   "keywords": [
-    "vuepress",
-    "theme",
-    "material design"
+    "github-blog"
   ],
+  "author": "lanccj",
+  "license": "ISC",
   "dependencies": {
-    "vuepress-theme-indigo-material": "^1.0.20"
+    "vuepress": "^1.0.2",
+    "vuepress-theme-meteorlxy": "^1.0.1"
   }
 }

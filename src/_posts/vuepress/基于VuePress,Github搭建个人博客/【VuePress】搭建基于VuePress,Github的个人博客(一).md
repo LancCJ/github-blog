@@ -1,7 +1,10 @@
 ---
+category: VuePress
+tags:
+  - VuePress
+date: 2019年6月26日16:56:27
 title: 基于VuePress,Github搭建个人博客(一)
-tags: [VuePress]
-categories: [VuePress]
+vssue-title: 基于VuePress,Github搭建个人博客(一)
 ---
 
 #### 内容大纲
