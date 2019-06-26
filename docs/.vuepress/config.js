@@ -40,7 +40,7 @@ module.exports = {
       option: {
         //公共的Vssue配置
         owner: 'lanccj', //用户名
-        repo: 'github-blog', //仓库名
+        repo: 'blog-comment', //仓库名
         locale: 'zh'
       },
       development: {
