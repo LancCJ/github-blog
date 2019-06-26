@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /logo.jpg
-actionText: 快速上手 →
+actionText: 快速测试上手 →
 actionLink: /zh/guide/
 features:
 - title: 简洁至上
