@@ -155,7 +155,7 @@ module.exports = {
         // 评论配置，参考下方 [页面评论] 章节
         comments: {
             platform: 'github',
-            owner: 'lanccj',
+            owner: 'LancCJ',
             repo: 'blog-comment',
             clientId: '8a03914e6fe8cd2c0f7c',
             clientSecret: '3d7ab25fed48afc4108f94e54332a575692d2d82',
