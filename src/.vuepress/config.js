@@ -150,7 +150,7 @@ module.exports = {
         nav: [
             { text: '首页', link: '/', exact: true },
             { text: '文章', link: '/posts/', exact: false },
-            { text: '项目', link: '/project', exact: false },
+            // { text: '开源项目', link: '/project', exact: false },
             { text: '个人简介', link: '/about', exact: false },
             { text: 'Custom Pages', link: '/custom-pages/', exact: false },
         ],
@@ -178,4 +178,12 @@ module.exports = {
             posts: true,
         },
     },
+    configureWebpack: {
+        resolve: {
+            alias: {
+                //图片路径别名设置
+                '@imgs': '/.vuepress/public/img'
+            }
+        }
+    }
 }
