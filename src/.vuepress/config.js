@@ -153,6 +153,14 @@ module.exports = {
             // { text: '开源项目', link: '/project', exact: false },
             { text: '个人简介', link: '/about', exact: false },
             // { text: 'Custom Pages', link: '/custom-pages/', exact: false },
+            // 下拉列表的配置
+            // {
+            //     text: '语言',
+            //     items: [
+            //         { text: '中文简体', link: '/language/chinese' },
+            //         { text: 'English', link: '/language/English' }
+            //     ]
+            // }
         ],
 
         // 评论配置，参考下方 [页面评论] 章节
