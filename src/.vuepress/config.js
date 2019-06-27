@@ -193,5 +193,13 @@ module.exports = {
                 '@imgs': '/.vuepress/public/img'
             }
         }
-    }
+    },
+    plugins: [
+        [ 
+            '@vuepress/google-analytics',
+            {
+                'ga': 'UA-142893826-1' // UA-00000000-0
+            }
+        ]  
+    ] 
 }
