@@ -149,16 +149,16 @@ module.exports = {
         // 顶部导航栏内容
         nav: [
             { text: '首页', link: '/', exact: true },
-            { text: '文章', link: '/posts/', exact: false },
+            { text: '文章', link: '/posts/', exact: true },
             // { text: '开源项目', link: '/project', exact: false },
-            { text: '个人简介', link: '/about', exact: false },
+            { text: '个人简介', link: '/about', exact: true },
+            { text: '项目管理', link: '/project', exact: true },
             // { text: 'Custom Pages', link: '/custom-pages/', exact: false },
             // 下拉列表的配置
             // {
-            //     text: '语言',
+            //     text: '管理地址',
             //     items: [
-            //         { text: '中文简体', link: '/language/chinese' },
-            //         { text: 'English', link: '/language/English' }
+            //         { text: 'Portainer管理', link: 'http://portainer.lanccj.cn/', exact: true }
             //     ]
             // }
         ],
@@ -175,7 +175,7 @@ module.exports = {
 
         // 分页配置
         pagination: {
-            perPage: 5,
+            perPage: 10,
         },
 
         // 默认页面（可选，默认全为 true）
