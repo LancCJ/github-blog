@@ -31,14 +31,14 @@ vssue: false
                 <p>工作内容:为苏州方正璞华信息技术有限公司提供项目外包服务，负责项目整体负责及技术支持和研发工作</p>
             </el-card>
             </el-timeline-item>
-            <el-timeline-item timestamp="2018/4/3-2018/07/31" placement="top">
+            <el-timeline-item timestamp="2016/1/1-2018/07/31" placement="top">
             <el-card>
-                <h4>苏州广立信息技术有限公司</h4>
+                <h4>苏州广立信息技术有限公司(工龄续广达的所以可以说一家公司待了7年左右)</h4>
                 <p>职务:高级开发(JAVA)</p>
                 <p>工作内容:新项目技术选型、研发，项目通用组件研发、帮助他人解决技术难题</p>
             </el-card>
             </el-timeline-item>
-            <el-timeline-item timestamp="2011/07/20-2018/4/2" placement="top">
+            <el-timeline-item timestamp="2011/07/20-2015/12/31" placement="top">
             <el-card>
                 <h4>苏州广达科技有限公司</h4>
                 <p>职务:软件开发工程师(JAVA)</p>

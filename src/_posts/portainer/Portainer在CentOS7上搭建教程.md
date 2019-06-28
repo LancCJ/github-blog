@@ -19,7 +19,7 @@ vssue-title: Portainer单主机搭建教程
 * 防火墙设置
 
 ## 安装docker
-通过SSH线连接到自己的Linux服务器
+通过SSH先连接到自己的Linux服务器
 
 安装一些必要的系统工具：
 ```
@@ -81,7 +81,7 @@ docker run -d -p 9000:9000 \
 
 ## 汉化
 
-平台已经搭建完毕非常简单，简单的几条命令执行就OK，但是界面是英文的，对于我们这样的人来说中文怎么可以没有呢，说干就干，查看下portainer版本号,上图平台首页右下角1.21.0
+平台已经搭建完毕非常简单，简单的几条命令执行就OK，但是界面是英文的，对于我们这样的人来说中文怎么可以没有呢，说干就干，查看下portainer版本号,上图平台首页左下角1.21.0
 
 先下载[汉化包](https://github.com/LancCJ/github-file/blob/master/portainer/Portainer-CN.zip)
 
