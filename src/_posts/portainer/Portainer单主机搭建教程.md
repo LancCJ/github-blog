@@ -83,7 +83,7 @@ docker run -d -p 9000:9000 \
 
 平台已经搭建完毕非常简单，简单的几条命令执行就OK，但是界面是英文的，对于我们这样的人来说中文怎么可以没有呢，说干就干，查看下portainer版本号,上图平台首页右下角1.21.0
 
-先下载汉化包
+先下载[汉化包](https://github.com/LancCJ/github-file/blob/master/portainer/Portainer-CN.zip)
 
 然后解压缩到文件名为public中，使用sftp命令或者工具上传到linux 路径为 /public
 
