@@ -151,7 +151,7 @@ module.exports = {
             { text: '首页', link: '/', exact: true },
             { text: '文章', link: '/posts/', exact: true },
             // { text: '开源项目', link: '/project', exact: false },
-            { text: '个人简介', link: '/about', exact: true },
+            // { text: '个人简介', link: '/about', exact: true },
             //{ text: '项目管理', link: '/project', exact: true },
             // { text: 'Custom Pages', link: '/custom-pages/', exact: false },
             // 下拉列表的配置
