@@ -82,10 +82,16 @@ vssue: false
 </div>
 
 <div v-else>
-    <el-dialog title="简历查看权限控制" :visible.sync="dialogFormVisible">
+    <!-- <el-button type="text" @click="dialogVisible = true">点击打开 Dialog</el-button> -->
+    <el-dialog title="简历查看权限控制" :visible.sync="dialogFormVisible"
+    close-on-click-modal=false
+    close-on-press-escape=false
+    show-close=false
+    width="25%"
+    >
     <el-form :model="form">
         <el-form-item label="查看密码" :label-width="formLabelWidth">
-        <el-input v-model="form.pwd" autocomplete="off" show-password></el-input>
+        <el-input v-model="form.pwd" autocomplete="off" show-password placeholder="请输入查看密码"></el-input>
         </el-form-item>        
     </el-form>
     <div slot="footer" class="dialog-footer">
@@ -114,12 +120,14 @@ vssue: false
     methods: {
                look:function(){
                    if(this.form.pwd=='123456'){
+                       
                         this.isShow = true;
                    }else{
                       this.$message({
-                        type: 'info',
+                        type: 'error',
                         message: '密码错误'
                     });  
+                    // this.centerDialogVisible = true
                    }
                }
 
