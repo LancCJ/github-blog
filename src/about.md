@@ -85,7 +85,7 @@ vssue: false
     <el-dialog title="简历查看权限控制" :visible.sync="dialogFormVisible">
     <el-form :model="form">
         <el-form-item label="查看密码" :label-width="formLabelWidth">
-        <el-input v-model="form.pwd" autocomplete="off"></el-input>
+        <el-input v-model="form.pwd" autocomplete="off" show-password></el-input>
         </el-form-item>        
     </el-form>
     <div slot="footer" class="dialog-footer">
