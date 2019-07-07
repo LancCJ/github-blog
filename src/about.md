@@ -4,6 +4,8 @@ title: 个人简介
 vssue: false
 ---
 
+<div v-if="isShow">
+
 ## 基本信息
 
 * 姓名:陈健
@@ -50,6 +52,8 @@ vssue: false
     </div>
 </template>
 
+
+
 ## 参与项目列表(无特别标注均为WEB开发)
 * 苏州汇川技术有限公司MES项目
 * 北京绫致时装IPSII电商采购项目 
@@ -74,3 +78,70 @@ vssue: false
     * 主打校园一体化教学信息化服务
 * EasyFactory(MES项目)     -->
 
+
+</div>
+
+<div v-else>
+    <el-dialog title="简历查看权限控制" :visible.sync="dialogFormVisible">
+    <el-form :model="form">
+        <el-form-item label="查看密码" :label-width="formLabelWidth">
+        <el-input v-model="form.pwd" autocomplete="off"></el-input>
+        </el-form-item>        
+    </el-form>
+    <div slot="footer" class="dialog-footer">
+        <!-- <el-button @click="dialogFormVisible = false">取 消</el-button> -->
+        <el-button type="primary" @click="look()">确 定</el-button>
+    </div>
+    </el-dialog>
+</div>
+
+
+
+
+
+<script>
+  export default {
+    data() {
+        return {
+            isShow : false,
+            form: {
+                pwd: ''
+        },
+        formLabelWidth: '120px',
+        dialogFormVisible: true
+        }
+    },
+    methods: {
+               look:function(){
+                   if(this.form.pwd=='123456'){
+                        this.isShow = true;
+                   }else{
+                      this.$message({
+                        type: 'info',
+                        message: '密码错误'
+                    });  
+                   }
+               }
+
+    },
+    mounted:function () {
+        // var _that = this;
+        // this.$confirm('请输入查看密码?', '提示', {
+        //   confirmButtonText: '确定',
+        //   cancelButtonText: '取消',
+        //   type: 'warning'
+        // }).then(() => {
+        // //   this.$message({
+        // //     type: 'success',
+        // //     message: '删除成功!'
+        // //   });
+        //     _that.data.isShow = true;
+        // }).catch(() => {
+        //   this.$message({
+        //     type: 'info',
+        //     message: '密码错误'
+        //   });          
+        // });
+    }
+  }
+</script>  
