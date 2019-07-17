@@ -3,18 +3,18 @@ category: Vaddin10
 tags:
   - Vaddin10
 date: 2019-07-17
-title: Vaadin10 教程之关键概念(一)
-vssue-title: Vaadin10 教程之概念(一)
+title: Vaadin10 教程之关键概念(二)
+vssue-title: Vaadin10 教程之概念(二)
 ---
 
-#### 本文来源
+## 本文来源
 
 本文来自[官网vaadin-key-concepts](https://vaadin.com/tutorials/vaadin-key-concepts)本人以便阅读理解以便做记录，一开始自己翻译但是水平有限顾谷歌翻译到此处，该文章主要是介绍vaadin这个框架的一些基本概念还有简单的使用方法，然后在文章中列举了一些相关资料的链接让新手可以快速的了解该框架，总体阅读下来觉得其实也很简单，只是中文资料比较少一起能讨论的人也比较少，在这里也想和大家一期探讨这个框架所以有需要的话后续创建一个微信群一期讨论下，我也是新手才学习这个东西。
 
 本文旨在给Vaadin新人快速熟悉，让新手对基本概念及一些相关链接深入了解有一个快速的预览，在开发vaadin应用的时候也是一个快速的参考。
 如果你还没有vaadin应用，可以从该地方配置下载[starter page.](https://vaadin.com/start)
 
-#### 基本概念 Core concepts
+## 基本概念 Core concepts
 
 * 任何对象都是组件 Everything is a component
 
@@ -24,7 +24,7 @@ vssue-title: Vaadin10 教程之概念(一)
 
     使用```addClickListener()```来给一个按钮添加监听事件，使用```addValueChangeListener()```获取select组建的变化事件，任何的组建都可以通过绑定事件监听来完成交互。
 
-#### Hello world
+## Hello world
 
    这里有一个很小的但是完整的vaddin应用，代码如下MainView.java
    ```java
@@ -40,7 +40,7 @@ vssue-title: Vaadin10 教程之概念(一)
    
    最终我们使用```@Route("")```来映射应用到根路径来访问该视图
 
-#### 组件 Components
+## 组件 Components
 
    Vaadin是基于组件的编程，它有大量的组建和布局来拓展和构建我们自己的组件，你可以在[这里](https://vaadin.com/components)找到这些组件
 
@@ -56,7 +56,7 @@ vssue-title: Vaadin10 教程之概念(一)
     组件仅仅自己本身无法满足需求的时候，我们就需要组合多个组件相互交互让整个大组件更有意义，如此我们就需要布局。
     
     
-#### 布局 Layouts
+## 布局 Layouts
 
    布局是特殊的组件用于容纳其他组件和决定在浏览器中如何展现UI，因为布局本身就是组件，他们能内嵌或者创建复杂的布局。
    
@@ -176,7 +176,7 @@ vssue-title: Vaadin10 教程之概念(一)
 
   有时您可能会发现在HTML中以声明方式定义布局更方便。Vaadin通过Template API支持此功能。声明性布局和模板被认为是更高级的主题。您可以在文档中了解有关创建声明性布局的更多信息。
 
-#### 事件监听 Listening to events   
+## 事件监听 Listening to events   
 
   Vaadin是一个事件驱动的框架。用户可以与之交互的任何组件都将发出您可以收听的事件。
 您将听到的典型事件是Button发出的click事件。
@@ -188,7 +188,7 @@ vssue-title: Vaadin10 教程之概念(一)
   ```
   在此示例中，我们在用户单击按钮时向其显示弹出通知。
 
-#### 创建组件 Creating components
+## 创建组件 Creating components
 
   到目前为止，我们只考虑使用现有组件。在开发自己的Vaadin应用程序时，通常会创建自己的组件，以将系统的复杂部分封装到可重用的组件中。这构成了Vaadin和大多数其他现代UI框架使用的基于组件的编程模型的基础。
 
@@ -263,7 +263,7 @@ vssue-title: Vaadin10 教程之概念(一)
 
   您可以像在任何其他组件中一样在代码中使用Designer创建的组件。您还可以使用在Designer中手动编码的组件。
 
-#### 与JavaScript事件和DOM节点交互 Interacting with JavaScript events and DOM nodes
+## 与JavaScript事件和DOM节点交互 Interacting with JavaScript events and DOM nodes
 
   在某些情况下，您需要构建一个仅通过组合现有组件无法构建的组件。Vaadin可以轻松扩展，以帮助在这种情况下。通过使用Element API，您可以访问DOM级事件和属性/属性。例如，让我们在组件上侦听鼠标悬停事件并将其记录到控制台：
 
@@ -275,11 +275,11 @@ vssue-title: Vaadin10 教程之概念(一)
 
   您可以阅读[有关侦听JavaScript事件](https://vaadin.com/docs/v13/flow/creating-components/tutorial-component-events.html)以及[使用文档中的HTML元素属性和属性](https://vaadin.com/docs/flow/creating-components/tutorial-component-basic.html)的更多信息。
 
-#### 创建自定义JS组件 Creating custom JavaScript components  
+## 创建自定义JS组件 Creating custom JavaScript components  
 
   您还可以在Vaadin中编写或集成完全自定义的UI组件。这些是更高级的主题，在文档中有更详细的介绍：阅读有关将[Web组件集成到Vaadin](https://vaadin.com/docs/v13/flow/web-components/integrating-a-web-component.html)的更多信息。阅读有关使用Element API[加载JavaScript文件](https://vaadin.com/docs/flow/importing-dependencies/tutorial-importing.html)和[创建组件](https://vaadin.com/docs/flow/creating-components/tutorial-component-basic.html)的更多信息。
 
-#### 表单和数据绑定 Forms and data binding 
+## 表单和数据绑定 Forms and data binding 
 
   将数据从数据对象绑定到输入是大多数应用程序最重要的功能之一。Vaadin有一个强大的数据绑定API，允许您创建任何类型的形式，你可以想象。Vaadin Binder API支持验证整个表单的单个字段和跨字段验证。您还可以定义向用户显示的值与保存到对象的值之间的转换。
 
@@ -373,7 +373,7 @@ vssue-title: Vaadin10 教程之概念(一)
       [阅读有关保存和验证表单的更多信息](https://vaadin.com/docs/v13/flow/binding-data/tutorial-flow-components-binder-load.html)
 
     
-#### 显示和延迟加载数据列表 Displaying and lazy loading lists of data  
+## 显示和延迟加载数据列表 Displaying and lazy loading lists of data  
 
   特别是在业务应用程序中，处理数据列表很常见。在Vaadin中，这通常使用[Grid](https://vaadin.com/components/vaadin-grid/java-examples)或[ComboBox](https://vaadin.com/components/vaadin-combo-box/java-examples)组件。
 
@@ -420,7 +420,7 @@ vssue-title: Vaadin10 教程之概念(一)
 
   阅读有关[使用DataProvider对延迟加载的数据进行排序和过滤](https://vaadin.com/docs/flow/binding-data/tutorial-flow-data-provider.html)的信息。
 
-#### 视图和导航 Views and navigation 
+## 视图和导航 Views and navigation 
 
   Vaadin配备了一个简单但功能强大的导航系统。任何组件都可以成为导航目标，您可以轻松捕获URL参数。
 
@@ -480,7 +480,7 @@ vssue-title: Vaadin10 教程之概念(一)
 
   你可以做比上面更复杂的导航系统。请参阅文档以了解有关[嵌套路由](https://vaadin.com/docs/v13/flow/routing/tutorial-router-layout.html)，[URL参数](https://vaadin.com/docs/flow/routing/tutorial-router-url-parameters.html)和[处理导航异常](https://vaadin.com/docs/v13/flow/routing/tutorial-routing-exception-handling.html)的更多信息。
 
-#### 测试 Testing    
+## 测试 Testing    
 
   测试是开发可靠应用程序的重要部分。您将为应用程序编写通常有三种类型的测试：单元测试，集成测试和端到端系统测试。
   
@@ -587,7 +587,7 @@ vssue-title: Vaadin10 教程之概念(一)
   
   阅读有关使用[TestBench](https://vaadin.com/testbench)创建可靠且可维护的测试的更多信息。
 
-#### 使用CSS设计样式 Styling with CSS 
+## 使用CSS设计样式 Styling with CSS 
 
   所有Vaadin组件都附带一个名为Lumo的可配置主题。Lumo允许您配置颜色，字体，大小调整，圆度和间距等内容，以使组件集看起来像您想要的那样。配置基于CSS自定义属性（变量），可确保所有组件看起来一致。
 
@@ -597,7 +597,7 @@ vssue-title: Vaadin10 教程之概念(一)
 
   阅读有关[样式化Vaadin应用程序](https://vaadin.com/docs/v13/flow/theme/theming-overview.html)的更多信息。
 
-#### 生产 Production   
+## 生产 Production   
 
   当您准备好将应用程序投入生产时，请运行：
   ```
@@ -608,7 +608,7 @@ vssue-title: Vaadin10 教程之概念(一)
 
   [阅读有关生产版本的更多信](https://vaadin.com/docs/flow/production/tutorial-production-mode-basic.html)
 
-#### 下一步 Next steps
+## 下一步 Next steps
 
   现在您已了解基础知识，您可以开始构建自己的应用程序。如果您想学习如何使用数据绑定和数据库构建完整的应用程序，请从[基本的Vaadin教程](https://vaadin.com/tutorials/getting-started-with-flow/setting-up-the-project)开始。如果您更喜欢观看视频，我们有一个关于Vaadin基础知识的[免费在线视频课程](https://vaadin.com/training/courses)（需要vaadin.com帐户）。如果您想浏览所有教程和学习资料，请访问[Vaadin学习中心](https://vaadin.com/tutorials)。如果您只是想修补一下，请查看[组件的代码段](https://vaadin.com/components)或转到[完整文档](https://vaadin.com/docs/index.html)，以更深入地解释Vaadin的工作原理。
     
