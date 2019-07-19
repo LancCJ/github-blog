@@ -9,8 +9,8 @@ npm run build
 # 进入生成的文件夹
 cd dist
 
-# 如果是发布到自定义域名
-echo 'blog.lanccj.cn' > CNAME
+# 如果是发布到自定义域名 假如使用github仓库自己的设置域名就要打开注释
+#echo 'blog.lanccj.cn' > CNAME
 
 git init
 git add -A
