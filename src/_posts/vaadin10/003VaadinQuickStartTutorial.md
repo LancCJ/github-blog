@@ -54,7 +54,7 @@ vssue-title: Vaadin10 教程之快速入门(三)
 
     Vaadin是一个基于组件的框架。您可以通过实例化组件并将它们放入确定如何显示它们的布局来构建用户界面。MainLayout.java扩展了VerticalLayout。这意味着添加的每个组件都放在前一个组件的下方。Vaadin在布局和组件周围添加了填充，以提高视觉清晰度。  
 
-![vaadinApplication2](../../.vuepress/public/img/vaadin10/vaadinApplication.jpg) 
+    ![vaadinApplication2](../../.vuepress/public/img/vaadin10/vaadinApplication.jpg) 
 
     首先，创建应用程序所需的所有组件：
 
@@ -77,7 +77,7 @@ vssue-title: Vaadin10 教程之快速入门(三)
 
     如果您仍在运行服务器，则可以构建项目，Spring Boot DevTools应该接收更改。如果没有，请运行spring-boot：根据“下载并导入app starter”部分中的说明运行Maven目标。导航到localhost：8080，您应该看到以下内容：
 
-![vaadinApplication3](../../.vuepress/public/img/vaadin10/vaadinApplication.jpg)
+    ![vaadinApplication3](../../.vuepress/public/img/vaadin10/vaadinApplication.jpg)
 
   * Listen to button click events to add new todo items
 
@@ -117,7 +117,7 @@ vssue-title: Vaadin10 教程之快速入门(三)
 
     刷新浏览器，然后尝试将一些项目添加到列表中。
 
-![completed-app](../../.vuepress/public/img/vaadin10/completed-app.gif)     
+    ![completed-app](../../.vuepress/public/img/vaadin10/completed-app.gif)     
 
     恭喜，您已经完成了第一个Vaadin申请！
 
