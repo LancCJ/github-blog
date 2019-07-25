@@ -9,7 +9,7 @@ vssue-title: Vaadin10 教程之如何使用WEB组件(四)
 
 ## 本文来源
 
-本文来自[官网Vaadin quick start tutorial](https://vaadin.com/tutorials/using-web-components)
+本文来自[官网Vaadin using-web-components](https://vaadin.com/tutorials/using-web-components)
 
 本教程将教您如何使用Web组件并与之交互。我们将构建一个小型UI，将人员添加到数据网格中。
 
