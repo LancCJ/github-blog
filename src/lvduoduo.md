@@ -158,7 +158,7 @@ https://github.com/LancCJ/lvduoduo-wechat.git
     close-on-click-modal=false
     close-on-press-escape=false
     show-close=false
-    width="25%"
+    width="99%"
     >
     <el-form :model="form">
         <el-form-item label="查看密码" :label-width="formLabelWidth">
@@ -173,9 +173,6 @@ https://github.com/LancCJ/lvduoduo-wechat.git
 </div>
 
 
-
-
-
 <script>
   export default {
     data() {
@@ -184,7 +181,7 @@ https://github.com/LancCJ/lvduoduo-wechat.git
             form: {
                 pwd: ''
         },
-        formLabelWidth: '120px',
+        formLabelWidth: '25%',
         dialogFormVisible: true
         }
     },
