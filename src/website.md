@@ -26,6 +26,15 @@ vssue-title: 建站案例
       :src="url1"
       ></el-image>
     </el-card>
+    <el-card class="box-card t-hover-shadow">
+    <div slot="header" class="clearfix">
+        <span class=" a-style"  @click='linkDownload("https://www.mingmo-tech.com/")' title="点击浏览">苏州明晶科技有限公司</span>
+    </div>
+    <el-image
+      style="width: 100%; height: 100%"
+      :src="url2"
+      ></el-image>
+    </el-card>
 </div>
 
 
@@ -37,8 +46,9 @@ vssue-title: 建站案例
     data() {
       return {
         // fits: ['fill', 'contain', 'cover', 'none', 'scale-down'],
-        url: 'img/website/sutouseal.jpg',
-        url1: 'img/website/ksjh-auto.jpg'
+        url: 'img/website/ksjh-auto.jpg',
+        url1: 'img/website/sutouseal.jpg',
+        url2: 'img/website/mingmo-tech.png'
       }
     },
     methods: {
