@@ -1,0 +1,64 @@
+---
+category: Other
+tags:
+  - Other
+date: 2019-09-21
+title: CND加速GitHubPage
+vssue-title: CND加速GitHubPage
+---
+
+该静态博客网站是使用Vuepress搭配一套主题搭建的，再利用GitHub提供的免费Page服务进行部署(集成自动化部署travis-ci)。提挈都是这么舒爽，但是新问题来了，国内访问速度慢，咋弄？那就CDN吧。
+
+一开始不知道CDN和全站CDN，首先弄了CDN一番捣鼓网站没啥效果，后来用了阿里全站CDN但是期间测试都是红色的。。。怎么不对呢？我哪里错了呢搁置了一段时间今天重新进行配置百度后尝试终于给我知道了怎么完整的配置下来，就总结给大家吧。
+
+## 备案过的域名
+搞之前大家先必须有一枚已经备案的域名，具体的备案过程烦请自行百度吧，过程有点长但是不复杂就是拍照审核这些，可以上阿里备案网站了解。我这里是我的二级域名blog.lanccj.com
+## 购买阿里全站CDN资源包服务
+因为便宜所以就支持下阿里华哥几十块钱买买资源包，按照流量计费。
+
+![资源包信息](../../.vuepress/public/img/other/资源包信息.jpg)
+
+## 创建CDN域名
+我们登陆阿里云，进入全站CDN的控制后台，在功能菜单域名管理进行添加
+
+![创建加速域名1](../../.vuepress/public/img/other/创建加速域名1.jpg)
+
+![创建加速域名2](../../.vuepress/public/img/other/创建加速域名2.jpg)
+
+通过以上设置  我们会在域名管理多一条记录然后返回给你一个CNAME域名
+
+## 配置CNAME
+
+我们前往阿里云后台的域名管理拿我们自己的域名和刚才提供的CNAME配置解析
+
+![域名解析1](../../.vuepress/public/img/other/域名解析1.jpg)
+
+![域名解析2](../../.vuepress/public/img/other/域名解析2.jpg)
+
+这样我们自定义的域名和加速的CDN域名就有联系了，下一步
+
+## 配置CDN
+
+我发现不去设置无法加速 测试网站速度都是红色的 不是很懂 就像我这样配置吧
+
+![回源配置](../../.vuepress/public/img/other/回源配置.jpg)
+
+不设置你测试下来都是红色的.....
+
+## 开启HTTPS
+
+因为我的资源都是阿里的 所以开启HTTPS很简单，在域名管理点击开启就行
+
+## 优化性能
+
+打开选项即可
+
+![配置CDN1](../../.vuepress/public/img/other/配置CDN1.jpg)
+
+![配置CDN2](../../.vuepress/public/img/other/配置CDN2.jpg)
+
+## 测试
+
+试试吧
+
+![未加速后](../../.vuepress/public/img/other/未加速后.jpg)
