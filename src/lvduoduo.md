@@ -148,6 +148,164 @@ https://github.com/LancCJ/lvduoduo-wechat.git
 
 
 
+## 7.10 项目模块梳理 
+
+web后台管理项目 工程名:Kinght.Web
+
+帮助提醒：想要寻找页面对应的控制器代码，先运行项目然后在控制面板-菜单导航查询相应的链接信息就能找到了easy!相应的按钮权限也是如此都从这里找哦!
+
+
+以下记录仅记录业务代码位置及简要的业务描述，尽量会写全
+
+
+## 7.11 首页模块
+* 控制器 HomeController 方法 Index 页面类型 HomeIndexModel
+* 主要业务是查询数据进行展示，然后展示系统配置的资源地址
+* 注意:在控制器代码里面主要使用了entityframework 的 ctx 对象直接调用统计数据
+
+## 7.12 基础服务
+
+使用web后台管理本地服务器需要安装几个服务
+
+![运行服务器需安装组件](/img/lvduoduo/运行服务器需安装组件.jpg)
+
+这三个服务就是需要安装代码中的3个如下项目
+
+![相应代码](/img/lvduoduo/相应代码.jpg)
+
+我们直接在IDE中右键安装这三个程序会出现如下类似错误
+
+![安装基础服务错误](/img/lvduoduo/安装基础服务错误.jpg)
+
+打包release版本就能安装
+
+![修改类型打包安装](/img/lvduoduo/修改类型打包安装.jpg)
+
+## 7.13 控制面板模块
+
+### 菜单导航
+* 链接  /Menu
+### 设备报警
+* 链接  /ClientAlert
+
+通过关键词 key,类型 type  开始时间 start  截止时间 end  设备的小区位置信息 location每页显示数量  查询报设备警信息
+
+### 角色管理
+* 链接  /Role
+### 系统管理员
+* 链接  /Administrator
+### 命令查询
+* 链接  /ClientCommand
+
+查询历史设备命令 界面通过 关键词 key  命令头 head 类型  type 方向 orientation 开始时间  start 截止时间 end 
+
+### Socket连接
+* 链接  /ClientSocket
+
+
+
+
+### 设备控制
+* 链接  /ClientControl
+### 设备监控
+* 链接  /ClientCheck
+
+## 7.13 基础数据模块
+
+### 小程序粉丝
+* 链接  /User
+### Loop生态社区粉丝
+* 链接  /Workers
+### 小区信息
+* 链接  /Location
+### 小区配置
+* 链接  /LocationSetting
+### 设备信息
+* 链接  /ClientManagement
+### 识别信息
+* 链接  /ICCard
+### 审核人员管理
+* 链接  /Auditors
+### 户籍管理
+* 链接  /Families
+### 维修人员管理
+* 链接  /Engineers
+### 清运人员管理
+* 链接  /Cleaners
+### 督导人员管理
+* 链接  /Supervisors
+
+## 7.14 IC卡申领模块
+### 待处理
+* 链接  /ICCardApplyNew
+### 已发卡
+* 链接  /ICCardApplyAcceptted
+### 已拒绝
+* 链接  /ICCardApplyRejected
+
+## 7.15 垃圾管理模块
+### 订单管理
+* 链接  /Order
+
+## 7.16 运营管理
+### 用户帮助
+* 链接  /Help
+### 积分历史
+* 链接  /User/Score
+### 反馈
+* 链接  /Feedback
+### 消息管理
+* 链接  /Message
+### 积分奖励
+* 链接  /ScoreAddRecords
+### 小区大屏
+* 链接  /Screens
+
+## 7.17 积分商城
+### 商品管理
+* 链接  /ScoreProduct
+### 订单管理
+* 链接  /ScoreOrder
+### 核销人员
+* 链接  /Cashiers
+
+## 7.18 回收预约
+### 回收标准
+* 链接  /RecoverProducts
+### 订单管理
+* 链接  /RecoverOrders
+### 回收员
+* 链接  /Recovers
+
+## 7.19 数据上报
+### 上报记录
+* 链接  /RS
+### 配置
+* 链接  /RSSettings
+
+## 7.20 统计报表
+### 注册用户数统计
+* 链接  /ReportRegisterUser
+### 活跃用户数统计
+* 链接  /ReportActiveUser
+### 垃圾投放统计
+* 链接  /ReportOrder
+### 基础数据对比分析
+* 链接  /ReportCompare
+### 小区月度统计
+* 链接  /ReportResidenceByMonth
+### 小区年度统计
+* 链接  /ReportResidenceByYear
+
+## 7.21 系统设置
+### 设置
+* 链接  	/Settings
+### 用户端公众号配置
+* 链接  /MPSettings
+### 管理端公众号
+* 链接  /MP2Settings
+### 小程序配置
+* 链接  /XCXSettings
 
 
 </div>
