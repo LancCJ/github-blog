@@ -16,14 +16,14 @@ vssue-title: CND加速GitHubPage
 ## 购买阿里全站CDN资源包服务
 因为便宜所以就支持下阿里华哥几十块钱买买资源包，按照流量计费。
 
-![资源包信息](../../.vuepress/public/img/other/资源包信息.jpg)
+![资源包信息](/img/other/资源包信息.jpg)
 
 ## 创建CDN域名
 我们登陆阿里云，进入全站CDN的控制后台，在功能菜单域名管理进行添加
 
-![创建加速域名1](../../.vuepress/public/img/other/创建加速域名1.jpg)
+![创建加速域名1](/img/other/创建加速域名1.jpg)
 
-![创建加速域名2](../../.vuepress/public/img/other/创建加速域名2.jpg)
+![创建加速域名2](/img/other/创建加速域名2.jpg)
 
 通过以上设置  我们会在域名管理多一条记录然后返回给你一个CNAME域名
 
@@ -31,9 +31,9 @@ vssue-title: CND加速GitHubPage
 
 我们前往阿里云后台的域名管理拿我们自己的域名和刚才提供的CNAME配置解析
 
-![域名解析1](../../.vuepress/public/img/other/域名解析1.jpg)
+![域名解析1](/img/other/域名解析1.jpg)
 
-![域名解析2](../../.vuepress/public/img/other/域名解析2.jpg)
+![域名解析2](/img/other/域名解析2.jpg)
 
 这样我们自定义的域名和加速的CDN域名就有联系了，下一步
 
@@ -41,7 +41,7 @@ vssue-title: CND加速GitHubPage
 
 我发现不去设置无法加速 测试网站速度都是红色的 不是很懂 就像我这样配置吧
 
-![回源配置](../../.vuepress/public/img/other/回源配置.jpg)
+![回源配置](/img/other/回源配置.jpg)
 
 不设置你测试下来都是红色的.....
 
@@ -53,12 +53,12 @@ vssue-title: CND加速GitHubPage
 
 打开选项即可
 
-![配置CDN1](../../.vuepress/public/img/other/配置CDN1.jpg)
+![配置CDN1](/img/other/配置CDN1.jpg)
 
-![配置CDN2](../../.vuepress/public/img/other/配置CDN2.jpg)
+![配置CDN2](/img/other/配置CDN2.jpg)
 
 ## 测试
 
 试试吧
 
-![未加速后](../../.vuepress/public/img/other/未加速后.jpg)
+![未加速后](/img/other/未加速后.jpg)
